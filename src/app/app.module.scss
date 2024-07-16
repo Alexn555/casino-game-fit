@@ -1,0 +1,24 @@
+@import '../scss/variables';
+
+.app {
+  text-align: center;
+}
+
+.header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+
+  h2 {
+    color: $mainDark;
+  }
+}
+
+a {
+  color: #3114d4;
+  border-bottom: "solid 1px";
+  padding-bottom: "1rem";
+}

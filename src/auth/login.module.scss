@@ -1,0 +1,91 @@
+@import '../scss/variables';
+
+$btnH: 64px;
+
+%section {
+    margin-bottom: 20px;
+    border: 1px dashed #dcdcdc;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+    .container {
+        position: absolute;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        text-align: center;
+        display: grid;
+        width: 412px;
+        @media only screen and (max-width: $mobile) {
+            width: 380px;
+        }
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .floatInput {
+        padding: 0;
+        position: relative;
+        width: 412px;
+        
+        input {
+            font-size: $normal;
+            font-weight: $weightNormal;
+            padding: 0px, 16px, 0px, 16px;
+            height: $btnH;
+            align-items: center;
+            padding: 0px 16px;
+            margin: 10px 0 10px 0;
+            height: 64px;
+            background: $white;
+            border: 1px solid $grey;
+            border-radius: 4px;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
+            width: 92%;
+        }
+      
+        label {
+          font-size: $normal;
+          position: absolute;
+          padding-left: 18px;
+          transform-origin: top left;
+          transform: translate(0, $normal) scale(0.8); 
+          transition: all .1s ease-in-out;  //speed
+        }
+    }
+
+    .noticeBtn {
+        @extend %section;
+        cursor: pointer;
+    }
+
+    .notice {
+        @extend %section;
+    }
+
+    .error {
+        color: $mainRed;
+    }
+
+    .submit {
+        margin-top: 20px;
+        background: #FDBC11;
+        box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.06);
+        border-radius: 4px;
+        height: $btnH;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@import '../../../scss/variables';
+
+.container {
+    input {
+        width: 80%;
+        height: 64px;
+        background: $white;
+        border: 1px solid $grey;
+        border-radius: 4px;
+        padding: 0 10px 0 10px;
+    }
+}

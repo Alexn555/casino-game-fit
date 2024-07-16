@@ -1,0 +1,35 @@
+@import '../../scss/variables';
+
+.gamesGridOne {
+    grid-template-columns: 1fr;
+}
+
+.gamesGridTwo {
+    grid-template-columns: 50% 50%;
+}
+.gamesGridThree {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.games {
+    display: grid;
+    column-gap: 6px;
+    row-gap: 6px;
+    
+    @media only screen and (max-width: $mobile) {
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-row-gap: 10px;
+    }
+}
+
+.game {
+    img {
+        width: 196px;
+        height: 141px;
+
+        @media only screen and (max-width: $mobile) {
+            width: 180px;
+            height: 130px;
+        }
+    }
+}

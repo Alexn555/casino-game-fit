@@ -1,0 +1,35 @@
+@import '../../scss/variables';
+
+.sortPanel {
+    height: 100vh;
+    background: $white;
+    padding-left: 16px;
+    
+    border: 1px solid $grey;
+    border-radius: 8px;
+
+    @media only screen and (max-width: $gameGridDesk) {
+        height: 400px;
+    }
+}
+
+.searchBar {
+    margin-top: 20px;
+}
+
+.gamesCount {
+    color: $darkGray;
+
+    button {
+        width: 120px;
+        height: 42px;
+        background: $white;
+        box-shadow: 0px -2px 18px rgba(128, 128, 128, 0.1);
+        border: none;
+        border-radius: 4px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

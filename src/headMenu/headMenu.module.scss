@@ -1,0 +1,45 @@
+@import '../scss/variables';
+
+$cntHeight: 70px;
+
+.container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 100%;
+    height: $cntHeight;
+    background: #FDFDFD;    
+    box-shadow: 0px -2px 18px rgba(128, 128, 128, 0.1);
+    margin-bottom: 60px;
+}
+
+.logo {
+    margin-left: $mrLeftDesk;
+}
+
+.userSection {
+   position: relative;
+   display: grid;
+   grid-template-columns: 50% 50%;
+}
+
+.user {
+    text-align: right;
+    line-height: $cntHeight;
+    padding-right: 36px;
+    font-weight: $weightBold;
+    color: $mainDark;
+}
+
+.logout {
+    line-height: $cntHeight;
+    user-select: none;
+
+    button {
+        border: none;
+        background-color: transparent;
+        color: $mainRed;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
